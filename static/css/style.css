@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  background: url('/static/images/Hero.png') no-repeat center 20%;
+  background: url('/static/images/hero.png') no-repeat center 20%;
   background-size: cover;
   display: flex;
   align-items: center;
