@@ -1,0 +1,34 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('/static/images/Hero.png') no-repeat center 20%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  border-radius: 12px;
+  padding: 12px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}

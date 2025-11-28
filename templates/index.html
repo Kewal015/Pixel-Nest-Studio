@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelNest Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="sticky-top bg-white shadow-sm border-bottom">
+  <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="#" class="d-inline-flex align-items-center text-decoration-none">
+        <svg class="bi" width="40" height="32" role="img" aria-label="PixelNest Studio">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="ms-2 fw-bold">PixelNest Studio</span>
+      </a>
+    </div>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#hero" class="nav-link px-2">Home</a></li>
+      <li><a href="#services" class="nav-link px-2">Services</a></li>
+      <li><a href="#portfolio" class="nav-link px-2">Portfolio</a></li>
+      <li><a href="#pricing" class="nav-link px-2">Pricing</a></li>
+      <li><a href="#contact" class="nav-link px-2">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<button class="btn btn-primary btn-lg cta-sticky" data-bs-toggle="modal" data-bs-target="#auditModal">Book Free Audit</button>
+
+<section class="hero d-flex align-items-center" id="hero">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-5 py-5" data-aos="fade-up">
+      <div class="col-lg-6 text-white">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Build. Grow. Dominate Your Digital Presence</h1>
+        <p class="lead">PixelNest Studio helps businesses scale with high-performance Web Design, SEO, PPC & Content Solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="about" style="background: linear-gradient(135deg, #f3f7ff, #ffffff);">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom text-center" data-aos="fade-up">Who We Are</h2>
+    <p class="text-center mx-auto mt-3" style="max-width:800px;" data-aos="fade-up" data-aos-delay="100">
+      PixelNest Studio is a creative digital agency helping ambitious brands grow through stunning websites and data-driven marketing. Our mission is to build experiences that convert visitors into customers.
+    </p>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+      <div class="feature col text-center" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="fs-2 text-body-emphasis">4+ Years Experience</h3>
+        <p>Delivering modern and performance-driven solutions to businesses worldwide.</p>
+      </div>
+      <div class="feature col text-center" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="fs-2 text-body-emphasis">120+ Projects</h3>
+        <p>Successfully completed a wide range of creative and technical projects.</p>
+      </div>
+      <div class="feature col text-center" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="fs-2 text-body-emphasis">Trusted Worldwide</h3>
+        <p>Working with clients across multiple countries with proven results.</p>
+      </div>
+      <div class="feature col text-center" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="fs-2 text-body-emphasis">Growth Focused</h3>
+        <p>Helping brands scale with strategic digital marketing and conversion-focused design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light" id="services">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="card p-3 text-center"><h5>Web Design & Development</h5><p>High-speed, responsive & conversion-focused websites.</p></div></div>
+      <div class="col-md-3"><div class="card p-3 text-center"><h5>SEO & Content Marketing</h5><p>Grow organic traffic & rank on search engines.</p></div></div>
+      <div class="col-md-3"><div class="card p-3 text-center"><h5>PPC & Paid Ads</h5><p>ROI-driven Google & Meta ad campaigns.</p></div></div>
+      <div class="col-md-3"><div class="card p-3 text-center"><h5>Branding & Creative</h5><p>Unique brand identity & visual storytelling.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="portfolio">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Portfolio / Case Studies</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="card"><div class="card-body">E-commerce Website — 3× sales growth</div></div></div>
+      <div class="col-md-4"><div class="card"><div class="card-body">SaaS Landing Page — 42% conversion lift</div></div></div>
+      <div class="col-md-4"><div class="card"><div class="card-body">Local SEO — Top 3 ranking in 8 months</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light" id="testimonials">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Client Testimonials</h2>
+    <div class="carousel slide" id="testimonialCarousel" data-bs-ride="carousel">
+      <div class="carousel-inner text-center p-4">
+        <div class="carousel-item active">
+          <p>"PixelNest Studio increased our leads by 55% in 3 months. Outstanding team!"</p>
+          <strong>— CEO, Brand</strong>
+        </div>
+        <div class="carousel-item">
+          <p>"Amazing UI design and exceptional support. Highly recommended!"</p>
+          <strong>— Founder, StartupX</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="pricing">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5 fw-bold">Pricing & Packages</h2>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3"><h4 class="my-0 fw-normal">Starter</h4></div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₹9,999</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Basic Website</li>
+              <li>Mobile Responsive</li>
+              <li>Basic Support</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3"><h4 class="my-0 fw-normal">Growth</h4></div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₹24,999</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Website + SEO</li>
+              <li>Speed Optimization</li>
+              <li>Free Audit</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Book Audit</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3"><h4 class="my-0 fw-normal">Enterprise</h4></div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Custom</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Full Marketing Solution</li>
+              <li>Brand + Ads + SEO</li>
+              <li>Priority Support</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="contact">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Let’s Grow Your Business</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" class="mx-auto" style="max-width:600px;">
+      <input type="text" name="name" class="form-control mb-3" placeholder="Your Name">
+      <input type="email" name="email" class="form-control mb-3" placeholder="Your Email">
+      <input type="tel" name="phone" class="form-control mb-3" placeholder="Your Phone">
+      <textarea name="message" class="form-control mb-3" rows="4" placeholder="Project Requirements"></textarea>
+      <button class="btn btn-primary w-100">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<div class="modal fade" id="auditModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <h3>Book Free Audit</h3>
+      <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input class="form-control mb-3" placeholder="Your Name" name="name">
+        <input class="form-control mb-3" placeholder="Your Email" name="email">
+        <button class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
