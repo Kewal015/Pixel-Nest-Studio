@@ -1,13 +1,20 @@
+
 .hero {
   position: relative;
   height: 100vh;
-  background: url('../images/hero.png') no-repeat center 20%;
+  background: url('../images/hero.png') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
+  justify-content: center; /* centers content horizontally */
   color: white;
+  padding: 0 20px;
 }
 
+.hero * {
+  position: relative;
+  z-index: 2;
+}
 
 .cta-sticky {
   position: fixed;
@@ -21,15 +28,29 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
+    height: 75vh;
+    background-position: center top;
     text-align: center;
     padding: 60px 0;
   }
+
   h1 {
     font-size: 1.9rem !important;
   }
+
   .cta-sticky {
     font-size: 14px;
     padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 65vh;
+    background-position: center top;
+  }
+
+  h1 {
+    font-size: 1.6rem !important;
   }
 }
